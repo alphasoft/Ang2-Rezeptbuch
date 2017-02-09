@@ -12,9 +12,8 @@ export class RecipeListComponent implements OnInit {
   @Output() recipeSelected = new EventEmitter<Recipe>();
 
   recipes: Recipe[] = [
-    new Recipe(
-      'Schnitzel',
-      'Sehr lecker',
+      // Recipe:{  name,  desciption,  imagePath, [Ingredients] }
+    new Recipe( 'Schnitzel', 'Sehr lecker',
       'http://kmetro.restaurantden.com/wp-content/uploads/sites/67/2016/03/dish_1.jpg',
       [
         new Ingredient('Pommes', 10),
@@ -22,6 +21,7 @@ export class RecipeListComponent implements OnInit {
       ]
     ),
     new Recipe('Salat', 'Auch lecker?', 'http://www.about.ch/culture/food/salat.jpg', []),
+    new Recipe('Dummy', 'dumb?', 'http://guides.global/images/guides/global/dummy_web_page.jpg', [])
   ];
   selectedRecipe: Recipe;
 
