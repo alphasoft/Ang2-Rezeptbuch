@@ -16,6 +16,7 @@
 .settings/
 
 # IDE - VSCode
+.editorconfig
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
